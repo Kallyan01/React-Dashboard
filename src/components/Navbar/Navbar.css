@@ -34,7 +34,7 @@
 }
 
 .text-menu .active {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 /* Rightside menu css */
@@ -75,6 +75,7 @@
 }
 
 .smartmenu {
+    /* background-color: red; */
     justify-content: center;
     align-items: center;
     margin: 0 1%;
@@ -110,9 +111,9 @@
     top: 0;
     right: 0;
     z-index: 1;
-    font-size: .8em;
+    font-size: .7em;
     font-weight: 700;
-    padding: 0px 5px;
+    padding: 0px 7px;
     border-radius: 50%;
     background-color: red;
 }
@@ -122,9 +123,9 @@
     top: 0;
     right: 0;
     z-index: 1;
-    font-size: .8em;
+    font-size: .7em;
     font-weight: 700;
-    padding: 0px 5px;
+    padding: 0px 7px;
     border-radius: 50%;
     background-color: rgb(255, 219, 17);
 }
@@ -134,9 +135,9 @@
     top: 0;
     right: 0;
     z-index: 1;
-    font-size: .8em;
+    font-size: .7em;
     font-weight: 700;
-    padding: 0px 5px;
+    padding: 0px 6px;
     border-radius: 50%;
     background-color: rgb(0, 183, 255);
 }
@@ -184,6 +185,12 @@
     font-size: 1.3em;
     margin: 5px;
     cursor: pointer;
+}
+.adminpic img
+{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
 }
 
 @media screen and (max-width:780px) {

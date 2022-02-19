@@ -2,8 +2,9 @@ import React,{useContext} from 'react'
 import './Navbar.css'
 import { GlobalContext } from '../Globalcontext/Globalcontext'
 function Navbar() {
-    const {nav} = useContext(GlobalContext)
+    const {nav,tab} = useContext(GlobalContext)
     const [navOpen, setNavOpen]= nav
+    const [Tab,setTab]= tab
     return (
         <div className='navbar'>
             <div className="leftmenu">
@@ -11,7 +12,7 @@ function Navbar() {
                     <i class="fas fa-bars"></i>
                 </div>
                 <div className="text-menu">
-                    <li className='active'>Dashboard</li>
+                    <li className='active'>{Tab===1?"Dashboard":"Release Project"}</li>
                     <li className=''>User</li>
                     <li className=''>Settings</li>
                 </div>
@@ -32,7 +33,7 @@ function Navbar() {
                 </div>
                 <div className="admin">
                     <div className="adminpic">
-                        <i class="fas fa-user-circle"></i>
+                        <img src="/userimage/user6.jpg" alt="" />
                     </div>
                     <div className="products">
                         <i class="fas fa-th"></i>
