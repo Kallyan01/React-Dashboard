@@ -13,7 +13,7 @@ function User({name,register,country,usage,payment,pic,lastactive}) {
                     <td >
                         <div className='userdetails'>
                             <p>{name}</p>
-                            <p>Ragistered : {register}</p>
+                            <p>New | Ragistered : {register}</p>
                         </div>
                     </td>
                     <td >

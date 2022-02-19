@@ -13,16 +13,17 @@
 .traffic
 {
     width: 100%;
-    padding: 5% 0 0 0;
+    padding: 5% 2% 0 2%;
     display: grid;
     place-items: center;
 }
 .traffic-title
 {
-    width: 85%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 7%;
 }
 .usertable
 {
@@ -56,13 +57,15 @@
     font-weight: 600;
     /* border-radius: 5px; */
     width: 33%;
+    font-weight: 500;
     /* padding: 5px; */
     background-color: rgb(235, 235, 235);
     color: rgb(85, 85, 85);
 }
 .dmy .active
 {
-    background-color: rgb(185, 185, 185);
+    background-color: blue;
+    color: #fff;
 }
 .download-data
 {
@@ -80,16 +83,72 @@
     transition: all .5s ease;
     transform: scale(1.1);
 }
-@media screen and (max-width:850px){
+@media screen and (max-width:1150px){
     .traffic
     {
-        padding: 20% 20px 0 0;
+        margin: 5% 0 0 0;
+    }
+}
+@media screen and (max-width:760px){
+    .traffic
+    {
+        margin: 20% 0 0 0;
     }
     .usertable
 {
     width: 100vw !important;
     overflow-X: scroll;
     padding: 0;
+}
+.dmy
+{
+    /* background-color: red; */
+    height: 30px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.dmy .day,.dmy .month ,.dmy .year
+{
+    border: 1px solid gray;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: .8em;
+    /* border-radius: 5px; */
+    width: 33%;
+    /* padding: 5px; */
+    background-color: rgb(235, 235, 235);
+    color: rgb(85, 85, 85);
+}
+
+.download-data
+{
+
+    height: 30px;
+    width: 30px;
+   
+}
+.dmy .active
+{
+    background-color: blue;
+    color: #fff;
+}
+.traffic-title
+{
+    /* background-color: red; */
+    width: 100%;
+    padding: 5px 10px;
+}
+.traffic-title-heading h3
+{
+    font-size: 1.5em;
+}
+.traffic-title-heading p
+{
+    font-size: .9rem;
 }
     
     

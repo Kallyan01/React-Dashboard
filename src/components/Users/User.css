@@ -21,8 +21,8 @@
 
 .userimg img {
     border-radius: 50%;
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
 }
 
 .userdetails {
@@ -57,8 +57,9 @@
 }
 .usercountry img 
 {
-    height: 15px;
-    width: 20px;
+    height: 20px;
+    width: 25px;
+    margin: 10px 0 0 0;
 }
 .userpayment
 {
@@ -68,4 +69,31 @@
     /* background-color: red; */
     height: 100%;
     margin: 0;
+}
+.userpayment i
+{
+    margin-top: 5px;
+   font-size: 1.3em;
+}
+.userdetails p:nth-child(1)
+{
+    font-size: .9em;
+    font-weight: 600;
+    color: rgb(78, 78, 78);
+}
+.userdetails p:nth-child(2)
+{
+    color: rgb(102, 102, 102);
+    font-weight: 500;
+}
+.useractivity p:nth-child(1)
+{
+    font-size: .7em;
+    font-weight: 600;
+    color: rgb(78, 78, 78);
+}
+.useractivity p:nth-child(2)
+{
+    color: rgb(102, 102, 102);
+    font-weight: 500;
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import {
     ResponsiveContainer,
     AreaChart,
@@ -11,6 +11,22 @@ import {
     CartesianGrid,
 } from "recharts";
 export default function Graph() {
+    const [ScreenWidth,setScreenWidth]=useState(0)
+    useEffect(() => {
+         window.addEventListener('resize',((env)=>{
+            setScreenWidth(env.currentTarget.outerWidth)
+        }))
+        
+    
+      return () => {
+        window.removeEventListener('resize',(env)=>{
+            setScreenWidth(env.currentTarget.outerWidth)
+        })
+      }
+    }, [ScreenWidth])
+    
+   
+
     const data = [
         {
             value: 75,
@@ -74,7 +90,7 @@ export default function Graph() {
         }
     ]
     return (
-        <ResponsiveContainer width="90%" height={400}>
+        <ResponsiveContainer width={ScreenWidth<=450?"100%":"90%"} height={ScreenWidth<=450?300:400}>
             <AreaChart data={data}>
                 <defs>
                     <linearGradient id='color' x1="0" y1="0" x2="0" y2="1">
