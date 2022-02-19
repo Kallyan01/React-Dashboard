@@ -1,0 +1,67 @@
+.option
+{
+    display: flex;
+    align-items: center;
+    padding: 10%;
+    margin: 5px 10px;
+    min-width: 100%;
+    height: 5vh;
+    width: 200px;
+   cursor: pointer;
+    /* justify-content:space-between; */
+
+}
+.control
+{
+    height: 10%;
+    /* background-color: red; */
+    position: relative;
+    /* padding: 10px; */
+}
+.control i
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px;
+    padding: 5px 8px;
+    background-color: red;
+    color: #fff;
+    border-radius: 50%;
+}
+.option:hover .icon
+{
+    color: #000 !important;
+   
+
+}
+.sidebar .active .option 
+{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px 0 0 20px;
+}
+.sidebar .active .icon , .sidebar .active .option-value
+{
+    color: #000 !important;
+}
+.option:hover .option-value
+{
+    color: #000 !important;
+
+}
+.option:hover 
+{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px 0 0 20px;
+}
+.option .icon 
+{
+    margin: 0 20px 0 0;
+    color: #fff;
+}
+.option-value
+{
+    color: #fff;
+    font-weight: 500;
+    /* padding-right:10px ; */
+}

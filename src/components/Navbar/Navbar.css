@@ -1,4 +1,4 @@
-.navbar, .leftmenu, .rightmenu, .text-menu, .thememode, .smartmenu, .user {
+.navbar, .leftmenu, .rightmenu, .text-menu, .thememode, .smartmenu, .admin {
     display: flex;
     flex-direction: row;
 }
@@ -7,16 +7,20 @@
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 10;
+    background-color: #fff;
     justify-content: space-between;
     padding: 5px 20px;
     align-items: center;
     box-shadow: 0px 1px 10px 3px rgb(206, 206, 206);
+    /* z-index: 2000; */
 }
 
 .menuicon {
     display: grid;
     place-items: center;
     cursor: pointer;
+    
 }
 
 .menuicon i {
@@ -161,22 +165,22 @@
     background-color: rgb(0, 183, 255);
     border-radius: 50%;
 } */
-.user {
+.admin {
     padding: 5px;
     justify-content: center;
     align-items: center;
 }
-.user i
+.admin i
 {
     color: #666666;
 }
-.user .userpic {
+.admin .adminpic {
     font-size: 1.8em;
     margin: 5px;
     cursor: pointer;
 }
 
-.user .products {
+.admin .products {
     font-size: 1.3em;
     margin: 5px;
     cursor: pointer;
@@ -186,7 +190,7 @@
     .leftmenu .text-menu {
         display: none;
     }
-    .user .products
+    .admin .products
     {
         display: none;
     }

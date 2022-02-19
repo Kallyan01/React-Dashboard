@@ -1,10 +1,13 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import './Navbar.css'
+import { GlobalContext } from '../Globalcontext/Globalcontext'
 function Navbar() {
+    const {nav} = useContext(GlobalContext)
+    const [navOpen, setNavOpen]= nav
     return (
         <div className='navbar'>
             <div className="leftmenu">
-                <div className="menuicon">
+                <div className="menuicon" onClick={()=>setNavOpen(0)}>
                     <i class="fas fa-bars"></i>
                 </div>
                 <div className="text-menu">
@@ -27,8 +30,8 @@ function Navbar() {
                     <li><i class="fas fa-list-ul"></i><p>8</p></li>
                     <li><i class="fas fa-envelope-open"></i><p>5</p></li>
                 </div>
-                <div className="user">
-                    <div className="userpic">
+                <div className="admin">
+                    <div className="adminpic">
                         <i class="fas fa-user-circle"></i>
                     </div>
                     <div className="products">

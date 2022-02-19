@@ -1,0 +1,42 @@
+.card {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    margin: 5px 0;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 5px rgb(221, 221, 221);
+    cursor: move;
+}
+.cardlist
+{
+    height: auto;
+    /* background-color: red; */
+    padding: 10px 0;
+    width: 100%;
+}
+.details .path
+{
+    color: gray;
+    font-size: .8em;
+}
+.details .query
+{
+   padding: 25px 0;
+   font-size: 1.1em;
+   font-weight: 600;
+
+}
+
+.customer-pic {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.customer-pic img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}

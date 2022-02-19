@@ -1,0 +1,71 @@
+.user {
+    align-items: center;
+    margin: 10px 0;
+}
+
+.userpic {
+    width: 5%;
+    /* background-color: red; */
+    text-align: center;
+
+}
+
+.username {
+    width: 30%;
+}
+
+.userimg {
+    display: grid;
+    place-items: center;
+}
+
+.userimg img {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+.userdetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* width: 30%; */
+}
+
+.userdetails p ,.useractivity p {
+    font-size: .6em;
+    font-weight: 600;
+    margin: 0;
+}
+
+.userusage, .userpayment, .useractivity {
+    display: grid;
+    place-content: center;
+    margin: 0 1%;
+}
+
+.useractivity {
+    display: block;
+}
+
+.usercountry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+.usercountry img 
+{
+    height: 15px;
+    width: 20px;
+}
+.userpayment
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    height: 100%;
+    margin: 0;
+}

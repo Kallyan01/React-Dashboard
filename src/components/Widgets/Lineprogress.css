@@ -1,0 +1,46 @@
+.lineprogress .outer
+{
+    height: 5px;
+    width: calc(10*30px);
+    background-color: rgba(216, 216, 216, 0.753);
+    position: relative;
+}
+tr:nth-child(5n + 1) .lineprogress .inner
+{
+    height: 100%;
+    background-color: red;
+}
+tr:nth-child(5n + 2) .lineprogress .inner
+{
+    height: 100%;
+    background-color: rgb(16, 165, 140);
+}
+tr:nth-child(5n + 3) .lineprogress .inner
+{
+    height: 100%;
+    background-color: rgb(255, 208, 0);
+}
+tr:nth-child(5n + 4) .lineprogress .inner
+{
+    height: 100%;
+    background-color: rgb(77, 15, 192);
+}
+tr:nth-child(5n + 5) .lineprogress .inner
+{
+    height: 100%;
+    background-color: rgb(6, 129, 119);
+}
+.prog-details
+{
+    display: flex;
+    justify-content: space-between;
+}
+.prog-details p:nth-child(1)
+{
+    font-weight: 700;
+}
+.prog-details p
+{
+    margin: 0;
+    font-size: .8em;
+}
