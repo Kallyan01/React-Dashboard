@@ -12,32 +12,32 @@ function Releaseproject() {
     "id": "task-1",
     "pic": "user1",
     "content": "Our Description is broken",
-    "flag": "red"
+    "flag": "green"
   },
   {
     "id": "task-2",
     "pic": "user2",
     "content": "Footer Not showing",
-    "flag": "red"
+    "flag": "green"
   }])
   const [Inprogressdata, setInprogressdata] = useState([
     {
       "id": "task-8",
       "pic": "user3",
       "content": "Email is not working in site",
-      "flag": "red"
+      "flag": "blue"
     },
     {
       "id": "task-9",
       "pic": "user2",
       "content": "Admin panel os not working",
-      "flag": "red"
+      "flag": "blue"
     },
     {
       "id": "task-10",
       "pic": "user5",
       "content": "Our site is showing 404 not found",
-      "flag": "red"
+      "flag": "blue"
     }
   ])
   const [Reviewdata, setReviewdata] = useState([{
