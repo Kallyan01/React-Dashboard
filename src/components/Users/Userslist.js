@@ -13,7 +13,6 @@ function Userslist() {
             })
             .catch(err => { console.log(err) })
     }, [])
-    console.log(Data)
     return (
         <table class="table table-hover ">
             <thead>

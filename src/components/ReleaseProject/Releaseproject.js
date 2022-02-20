@@ -72,7 +72,7 @@ function Releaseproject() {
   }])
 
   function onDragEnd(result) {
-    console.log(result)
+    
     const { source, destination } = result
     let add, active;
     if (!destination) return;
