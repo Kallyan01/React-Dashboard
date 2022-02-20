@@ -1,40 +1,39 @@
-.dashboard
-{
+.dashboard {
     display: flex;
     flex-direction: column;
 }
-.traffic-graph
-{
+
+.traffic-graph {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.traffic
-{
+
+.traffic {
     width: 100%;
     padding: 5% 2% 0 2%;
     display: grid;
     place-items: center;
 }
-.traffic-title
-{
+
+.traffic-title {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 7%;
 }
-.usertable
-{
+
+.usertable {
     padding: 0 5%;
 }
-.graph-options
-{
+
+.graph-options {
     display: flex;
 }
-.dmy
-{
+
+.dmy {
     /* background-color: red; */
     height: 40px;
     width: 210px;
@@ -42,31 +41,29 @@
     justify-content: center;
     cursor: pointer;
 }
-.dmy div:hover
-{
+
+.dmy div:hover {
     background-color: blue;
     color: #fff;
 }
-.dmy .day,.dmy .month ,.dmy .year
-{
+
+.dmy .day, .dmy .month, .dmy .year {
     border: 1px solid gray;
     display: grid;
     place-items: center;
     font-weight: 600;
-    /* border-radius: 5px; */
     width: 33%;
     font-weight: 500;
-    /* padding: 5px; */
     background-color: rgb(235, 235, 235);
     color: rgb(85, 85, 85);
 }
-.dmy .active
-{
+
+.dmy .active {
     background-color: blue;
     color: #fff;
 }
-.download-data
-{
+
+.download-data {
     display: grid;
     place-items: center;
     color: rgb(255, 255, 255);
@@ -76,78 +73,70 @@
     width: 40px;
     cursor: pointer;
 }
-.download-data:hover i
-{
+
+.download-data:hover i {
     transition: all .5s ease;
     transform: scale(1.1);
 }
-@media screen and (max-width:1150px){
-    .traffic
-    {
+
+@media screen and (max-width:1150px) {
+    .traffic {
         margin: 5% 0 0 0;
     }
 }
-@media screen and (max-width:760px){
-    .traffic
-    {
+
+@media screen and (max-width:760px) {
+    .traffic {
         margin: 20% 0 0 0;
     }
-    .usertable
-{
-    width: 100vw !important;
-    overflow-X: scroll;
-    padding: 0;
-}
-.dmy
-{
-    /* background-color: red; */
-    height: 30px;
-    width: 150px;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-}
 
-.dmy .day,.dmy .month ,.dmy .year
-{
-    border: 1px solid gray;
-    display: grid;
-    place-items: center;
-    font-weight: 600;
-    font-size: .8em;
-    /* border-radius: 5px; */
-    width: 33%;
-    /* padding: 5px; */
-    background-color: rgb(235, 235, 235);
-    color: rgb(85, 85, 85);
-}
+    .usertable {
+        width: 100vw !important;
+        overflow-X: scroll;
+        padding: 0;
+    }
 
-.download-data
-{
+    .dmy {
+        height: 30px;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+    }
 
-    height: 30px;
-    width: 30px;
-   
-}
-.dmy .active
-{
-    background-color: blue;
-    color: #fff;
-}
-.traffic-title
-{
-    /* background-color: red; */
-    width: 100%;
-    padding: 5px 10px;
-}
-.traffic-title-heading h3
-{
-    font-size: 1.5em;
-}
-.traffic-title-heading p
-{
-    font-size: .9rem;
-}
-    
-    
+    .dmy .day, .dmy .month, .dmy .year {
+        border: 1px solid gray;
+        display: grid;
+        place-items: center;
+        font-weight: 600;
+        font-size: .8em;
+        width: 33%;
+        background-color: rgb(235, 235, 235);
+        color: rgb(85, 85, 85);
+    }
+
+    .download-data {
+
+        height: 30px;
+        width: 30px;
+
+    }
+
+    .dmy .active {
+        background-color: blue;
+        color: #fff;
+    }
+
+    .traffic-title {
+        width: 100%;
+        padding: 5px 10px;
+    }
+
+    .traffic-title-heading h3 {
+        font-size: 1.5em;
+    }
+
+    .traffic-title-heading p {
+        font-size: .9rem;
+    }
 }

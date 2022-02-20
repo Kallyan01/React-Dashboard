@@ -1,10 +1,8 @@
-import React, { useRef, useContext } from 'react'
+import React from 'react'
 import './Card.css'
-import { GlobalContext } from '../Globalcontext/Globalcontext'
 import { Draggable } from 'react-beautiful-dnd'
 function Card({ query, pic, flag, id, index }) {
-    const { card } = useContext(GlobalContext)
-    const cardselect = card;
+
     const flagcol = {
         color: `${flag}`,
         fontSize: `.8em`,
@@ -16,7 +14,7 @@ function Card({ query, pic, flag, id, index }) {
         <Draggable draggableId={id} index={index} key={id}>
             {
              (provided) => {
-                   return <div className='card' ref={cardselect} draggable='true'
+                   return <div className='card'  draggable='true'
                         {...provided.draggableProps}
                         {...provided.dragHandleProps}
                         ref={provided.innerRef}
@@ -29,7 +27,7 @@ function Card({ query, pic, flag, id, index }) {
                                 {query}
                             </div>
                             <div className="flag">
-                                <i class="fas fa-flag" style={flagcol}></i>
+                                <i className="fas fa-flag" style={flagcol}></i>
                             </div>
                         </div>
                         <div className="customer-pic">

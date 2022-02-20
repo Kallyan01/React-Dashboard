@@ -2,8 +2,6 @@ import React,{useState,useEffect} from 'react'
 import {
     ResponsiveContainer,
     AreaChart,
-    LineChart,
-    Line,
     XAxis,
     YAxis,
     Area,

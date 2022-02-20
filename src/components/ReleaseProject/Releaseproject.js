@@ -1,13 +1,10 @@
-import React, { useState, useContext, useEffect } from 'react'
+import React, { useState} from 'react'
 import Card from '../Widgets/Card'
 import './Releaseproject.css'
-import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd'
-import { GlobalContext } from '../Globalcontext/Globalcontext'
+import { DragDropContext, Droppable } from 'react-beautiful-dnd'
 
-// import initialData from '../Taskdata'
 function Releaseproject() {
-  const { cards } = useContext(GlobalContext)
-  const cardlist = cards
+  
   const [Readydata, setReadydata] = useState([{
     "id": "task-1",
     "pic": "user1",
@@ -74,36 +71,36 @@ function Releaseproject() {
   function onDragEnd(result) {
     
     const { source, destination } = result
-    let add, active;
+    let add;
     if (!destination) return;
-    if (destination.droppableId == source.droppableId && destination.index == source.index) return
-    if (source.droppableId == 'ready') {
+    if (destination.droppableId === source.droppableId && destination.index === source.index) return
+    if (source.droppableId === 'ready') {
       add = Readydata[source.index]
       Readydata.splice(source.index, 1)
     }
-    if (source.droppableId == 'inprog') {
+    if (source.droppableId === 'inprog') {
       
       add = Inprogressdata[source.index]
       Inprogressdata.splice(source.index, 1)
     }
-    if (source.droppableId == 'rev') {
+    if (source.droppableId === 'rev') {
    
       add = Reviewdata[source.index]
       Reviewdata.splice(source.index, 1)
     }
-    if (destination.droppableId == 'ready') {
+    if (destination.droppableId === 'ready') {
 
       Readydata.splice(destination.index, 0, add)
       setReadydata([...Readydata])
      
     }
-    if (destination.droppableId == 'inprog') {
+    if (destination.droppableId === 'inprog') {
 
       Inprogressdata.splice(destination.index, 0, add)
       setInprogressdata([...Inprogressdata])
       
     }
-    if (destination.droppableId == 'rev') {
+    if (destination.droppableId === 'rev') {
 
       Reviewdata.splice(destination.index, 0, add)
       console.log("Executed")
