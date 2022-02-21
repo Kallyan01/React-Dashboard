@@ -96,12 +96,13 @@
 }
 .useractivity p:nth-child(1)
 {
-    font-size: .7em;
-    font-weight: 600;
-    color: rgb(78, 78, 78);
+    
+    color: rgb(133, 133, 133);
 }
 .useractivity p:nth-child(2)
 {
     color: rgb(102, 102, 102);
     font-weight: 500;
+    font-size: .7em;
+    font-weight: 600;
 }

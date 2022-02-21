@@ -8,9 +8,10 @@ export const GlobalProvider = ({children}) => {
     const cardselect = useRef([])
     const cardlist = useRef([])
     const [Tab,setTab]=useState(0)
+    const [ScreenWidth,setScreenWidth]=useState(0)
 
     return (
-        <GlobalContext.Provider value = {{nav:[navOpen, setNavOpen],card: cardselect,cards: cardlist,tab :[Tab,setTab]}}>
+        <GlobalContext.Provider value = {{nav:[navOpen, setNavOpen],card: cardselect,cards: cardlist,tab :[Tab,setTab],screen: [ScreenWidth,setScreenWidth]}}>
             {children}
         </GlobalContext.Provider>
     )

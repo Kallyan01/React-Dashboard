@@ -2,11 +2,13 @@
 {
     height: auto;
     width: 100%;
+    
 }
 .table
 {
     width: 100%;
     margin: auto;
+    margin: 5% 0;
 }
 @media screen and (max-width:800px){
     .table

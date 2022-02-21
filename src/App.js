@@ -8,7 +8,6 @@ function App() {
   return (
     <GlobalProvider>
       <div className="App">
-        
         <Routes>
           <Route path='/' element={<Index />} >
             <Route path='' element={ <Dashboard/>} />

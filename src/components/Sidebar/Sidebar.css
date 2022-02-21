@@ -42,7 +42,7 @@
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
 }
-
+/* 
 .sidebar .active .option::after {
     position: absolute;
     content: '';
@@ -51,11 +51,11 @@
     height: 5px;
     width: 95%;
     border-radius: 0 0 10px 0;
-    background-color: rgb(24, 5, 68);
+    background-color: rgb(255, 255, 255);
 
-}
+} */
 
-.sidebar .active .option::before {
+/* .sidebar .active .option::before {
     position: absolute;
     content: '';
     bottom: 0;
@@ -65,11 +65,11 @@
     border-radius: 0 10px 0 0;
     background-color: rgb(24, 5, 68);
 
-}
+} */
 
 
 .sidebar .active .icon, .sidebar .active .option-value {
-    color: #000 !important;
+    color: #000 ;
 }
 
 .option:hover .option-value {
@@ -80,11 +80,11 @@
 
 .option .icon {
     margin: 0 20px 0 0;
-    color: #fff;
+    color: rgb(107, 107, 107);
 }
 
 .option-value {
-    color: #fff;
+    color: rgb(107, 107, 107);
     font-weight: 500;
     /* padding-right:10px ; */
 }

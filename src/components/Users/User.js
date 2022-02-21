@@ -32,7 +32,7 @@ function User({name,register,country,usage,payment,pic,lastactive}) {
                     <td>
                         <div className="useractivity">
                             <p>Last Login</p>
-                            <p>{lastactive} ego </p>
+                            <p>{lastactive} ago </p>
                         </div>
                     </td>
                 </tr>

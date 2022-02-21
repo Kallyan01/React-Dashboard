@@ -1,10 +1,11 @@
 .releaseproject .pagetitle {
     padding: 20px;
-}
-
-.releaseproject .pagetitle {
     display: flex;
     align-items: center;
+}
+
+.releaseproject {
+    margin: 5% 0 0 0;
 }
 
 .releaseproject i {
@@ -14,40 +15,41 @@
     background-color: rgb(226, 226, 226);
     padding: 10px;
     border-radius: 15px;
+
 }
 
 .re-container {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: flex-start;
 
 }
-.re-container .ready
-{
-    margin: 0 5px;
+
+.re-container .ready {
+    margin: 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
- 
-    
+
+
 }
-.re-container .inprogress
-{
-  
-    margin: 0 5px;
+
+.re-container .inprogress {
+
+    margin: 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   
-   
+
+
 }
-.re-container .review
-{
-    margin: 0 5px;
+
+.re-container .review {
+    margin: 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,50 +57,83 @@
     /* padding: 20px 0; */
     /* background-color: red; */
 }
-.cont
-{
+
+.cont {
     width: 400px;
-    background-color: rgb(243, 243, 243);
     /* height: 90vh; */
-    padding-bottom: 20px;
-    border-radius: 0 0 10px 10px;
+    /* padding-bottom: 20px; */
+
     height: auto;
     transition: all .8s ease-in-out;
+    margin: 0 5px;
+
 }
+
 .re-container .cont-header {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 5px 10px 5px rgb(221, 221, 221);
+    box-shadow: 0px 3px 9px 0px rgb(221 221 221);
     border-top: 5px solid red;
-    border-radius: 10px;
-
+    border-radius: 5px;
+    padding: 8px 10px;
 }
+
 .ready .cont-header {
 
     border-top: 5px solid rgb(57, 160, 16);
-    
+
 
 }
+
 .inprogress .cont-header {
 
     border-top: 5px solid rgb(4, 205, 255);
-    
+
 
 }
+
 .review .cont-header {
 
     border-top: 5px solid red;
-    
+
 
 }
+
 .re-container .cont-header span {
-    margin: 0 5px ;
-    padding:0px 10px;
+    margin: 0 5px;
+    padding: 0px 10px;
     border-radius: 10px;
     font-weight: 700;
     background-color: rgb(226, 226, 226);
-  color: rgb(134, 134, 134);
+    color: rgb(134, 134, 134);
+
+}
+
+@media screen and (max-width:800px) {
+    .releaseproject {
+        margin: 20% 0 0 0;
+    }
+
+}
+
+@media screen and (max-width:580px) {
+    .releaseproject .pagetitle h3 {
+        margin: 0;
+        font-size: 1.3em;
+        padding: 5px;
+    }
+
+
+    .releaseproject i {
+        font-size: 1em;
+        color: rgb(228, 80, 80);
+        margin: 0;
+        background-color: rgb(226, 226, 226);
+        padding: 5px;
+        border-radius: 15px;
+
+    }
 
 }
