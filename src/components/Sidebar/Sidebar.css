@@ -37,11 +37,6 @@
 
 }
 
-.sidebar .active .option {
-    position: relative;
-    background-color: rgb(255, 255, 255);
-    border-radius: 20px;
-}
 /* 
 .sidebar .active .option::after {
     position: absolute;

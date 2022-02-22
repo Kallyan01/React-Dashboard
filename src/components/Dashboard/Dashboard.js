@@ -1,5 +1,7 @@
+import { Chart } from 'chart.js'
 import React from 'react'
 import Userslist from '../Users/Userslist'
+import Chartcont from '../Widgets/Chartcont'
 import Graph from '../Widgets/Graph'
 import './Dashboard.css'
 function Dashboard() {
@@ -24,6 +26,7 @@ function Dashboard() {
                 </div>
                 <div className="traffic-graph">
                     <Graph />
+                    {/* <Chartcont/> */}
                 </div>
             </div>
             <div className="usertable">
