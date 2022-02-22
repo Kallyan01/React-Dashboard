@@ -22,12 +22,11 @@ function Index() {
   const sidebar = {
     transform: `translateX(-${NavOpen}%)`,
     width: `${ScreenWidth >= 800 ? 20 : 50}%`
-    // width: ScreenWidth>800?`${NavOpen === 0 ? 20 : 0}%`:`${NavOpen === 0 ? 50 : 0}%`
-
+  
   }
   const bodywidth = {
     transform: ScreenWidth > 760 ? `translate(${NavOpen === 0 ? 20 : 0}%)` : `translate(${NavOpen === 0 ? 50 : 0}%)`,
-    // width: ScreenWidth>800?`${NavOpen === 0 ? 80 : 100}%`:`${NavOpen === 0 ? 100 : 100}%`,
+  
 
   }
 
