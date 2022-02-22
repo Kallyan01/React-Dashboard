@@ -2,9 +2,8 @@ import React,{useContext} from 'react'
 import './Navbar.css'
 import { GlobalContext } from '../Globalcontext/Globalcontext'
 function Navbar() {
-    const {nav,tab,pro} = useContext(GlobalContext)
+    const {nav,tab} = useContext(GlobalContext)
     const [navOpen, setNavOpen]= nav
-    const [Showpro,setShowpro] = pro
     const [Tab,setTab]= tab
     return (
         <div className='navbar'>
@@ -33,7 +32,7 @@ function Navbar() {
                     <li><i class="fas fa-envelope-open"></i><p>5</p></li>
                 </div>
                 <div className="admin">
-                    <div className="adminpic" onClick={()=>{setShowpro(!Showpro)}}>
+                    <div className="adminpic">
                         <img src="/userimage/user6.jpg" alt="" />
                     </div>
                     <div className="products">

@@ -17,13 +17,13 @@ function Sidebar() {
             <NavLink to='Dashboard' onClick={()=>setTab(1)}>
                 <div className="option">
                     <div className="icon"><i class="fas fa-home"></i></div>
-                    <div className="option-value">Dashboard</div>
+                    <div className="option-value"><p>Dashboard</p></div>
                 </div>
             </NavLink>
             <NavLink to='ReleaseProject' onClick={()=>setTab(2)}>
                 <div className="option">
                     <div className="icon"><i class="fas fa-bell"></i></div>
-                    <div className="option-value">Release Project</div>
+                    <div className="option-value"><p>Release Project</p></div>
                 </div>
             </NavLink>
         </>

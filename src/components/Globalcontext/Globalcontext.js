@@ -19,7 +19,6 @@ export const GlobalProvider = ({children}) => {
                 cards: cardlist,
                 tab :[Tab,setTab],
                 screen: [ScreenWidth,setScreenWidth],
-                pro : [Showpro,setShowpro],
             }
             }>
             {children}

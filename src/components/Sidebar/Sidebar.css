@@ -63,7 +63,7 @@
 } */
 
 
-.sidebar .active .icon, .sidebar .active .option-value {
+.sidebar .active .icon i, .sidebar .active .option-value p{
     color: #000 ;
 }
 
@@ -73,13 +73,28 @@
 }
 
 
-.option .icon {
+.option .icon i{
     margin: 0 20px 0 0;
     color: rgb(107, 107, 107);
 }
 
-.option-value {
+
+.option .option-value p {
     color: rgb(107, 107, 107);
     font-weight: 500;
-    /* padding-right:10px ; */
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+}
+@media screen and (max-width:800px){
+    .option .icon i {
+        font-size: 1em;
+    }
+    
+     .option .option-value p {
+        font-size: 1em;
+        padding: 0;
+        margin: 0;
+    }
+    
 }
