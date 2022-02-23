@@ -4,7 +4,7 @@ import Graph from '../Widgets/Graph'
 import './Dashboard.css'
 function Dashboard() {
     return (
-        <div className='dashboard'>
+        <div className='dashboard'> 
             <div className="traffic">
                 <div className="traffic-title">
                     <div className="traffic-title-heading">
