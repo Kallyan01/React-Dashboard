@@ -7,7 +7,7 @@ import { Outlet } from 'react-router-dom'
 
 function Index() {
   const { nav, screen } = useContext(GlobalContext)
-  const [NavOpen] = nav
+  const [navOpen] = nav
   const [ScreenWidth, setScreenWidth] = screen;
 
   useEffect(() => {
@@ -20,26 +20,25 @@ function Index() {
     setScreenWidth(window.screen.availWidth)
   }
   const sidebar = {
-    transform: `translateX(-${NavOpen}%)`,
-    width: `${ScreenWidth >= 800 ? 20 : 50}%`
-  
+    width: `${ScreenWidth >= 800 ? (navOpen===true?20:0) : (navOpen===true?70:0)}%`
   }
   const bodywidth = {
-    // width: ScreenWidth > 760 ? `(${NavOpen === 0 ? 20 : 0}%)` : `(${100}%)`,
-    width: '100%',
+    width: `${ScreenWidth >= 800 ? (navOpen===true?80:100) : (navOpen===true?100:100)}%`
   }
   return (
-    <div>
-      <Navbar />
       <div className="main">
         <div className="sidebar" style={sidebar}>
           <Sidebar />
         </div>
-        <div className="body" style={bodywidth}>
-          <Outlet />
+        <div className="righttab" style={bodywidth}>
+          <div className="navmenu">
+            <Navbar />
+          </div>
+          <div className="body" >
+            <Outlet />
+          </div>
         </div>
       </div>
-    </div>
   )
 }
 

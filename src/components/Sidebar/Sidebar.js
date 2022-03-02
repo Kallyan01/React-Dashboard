@@ -10,9 +10,7 @@ function Sidebar() {
         <>
 
             <div className="control">
-                <div className="menuicon" onClick={() => setNavOpen(100)}>
-                    <i class="fas fa-times"></i>
-                </div>
+                <h3><span>One</span>Ness</h3>
             </div>
             <NavLink to='Dashboard' onClick={()=>setTab(1)}>
                 <div className="option">

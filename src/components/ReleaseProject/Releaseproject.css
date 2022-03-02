@@ -6,8 +6,7 @@
 }
 
 .releaseproject {
-    width: 90%;
-    margin: 5% auto;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +68,7 @@
 }
 
 .cont {
-    width: 400px;
+    width: 25%;
     /* height: 90vh; */
     /* padding-bottom: 20px; */
 

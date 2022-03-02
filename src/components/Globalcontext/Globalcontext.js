@@ -4,7 +4,7 @@ export const GlobalContext = createContext({});
 
 export const GlobalProvider = ({children}) => {
 
-    const [navOpen, setNavOpen] = useState(100);
+    const [navOpen, setNavOpen] = useState(false);
     const cardselect = useRef([])
     const cardlist = useRef([])
     const [Tab,setTab]=useState(0)

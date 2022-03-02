@@ -1,33 +1,61 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    flex-direction: row;
+    height: 100vh;
+    overflow-y: hidden;
+    transform-origin: right;
+}
 
 .sidebar {
-    float: left;
-    position: fixed;
-   top: 0;
-    
     height: 100vh;
     overflow: hidden;
     background-color: rgb(236, 236, 236);
-    transition: all .8s ease-in-out;
+    transition: all .5s ease-in-out;
     z-index: 100;
-   
+    
 }
-.sidebar a
-{
+
+.sidebar a {
     text-decoration: none;
 }
-.main
-{
+
+.righttab {
     display: flex;
-    overflow-x: hidden;
-    flex-direction: row;
+    overflow: scroll;
+    flex-direction: column;
+    transition: all .5s ease-in-out;
+   
 }
 
+.navmenu {
+    /* background-color: red; */
+    width: 100%;
+    position: sticky ;
+    top: 0;
+    right: 0;
+    margin: 0 0 5% 0;
+    z-index: 100;
+}
 
 .body {
-    /* float: left; */
+
     transition: all .8s ease-in-out;
-    /* background-color: red; */
-    /* width: 100%; */
+
+    width: 100%;
     margin: 3% 0;
-    
+
+}
+@media all and (max-width:780px)
+{
+    .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+    }
+    .navmenu {
+        margin: 0 0 0 0;
+    }
 }

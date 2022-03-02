@@ -116,7 +116,6 @@ function Releaseproject() {
       </div>
       <DragDropContext onDragEnd={onDragEnd}>
         <div className="re-container">
-
           <div className="ready cont">
             <div className="cont-header ">
               <h4>Ready</h4>

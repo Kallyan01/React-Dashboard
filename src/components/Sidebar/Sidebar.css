@@ -15,20 +15,15 @@
 
 .control {
     height: 10%;
-    /* background-color: red; */
-    position: relative;
-    /* padding: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
-
-.control i {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 5px;
-    padding: 5px 8px;
-    background-color: red;
-    color: #fff;
-    border-radius: 50%;
+.control h3 span
+{
+    font-weight: 700;
+    color: rgb(212, 55, 16);
 }
 
 .option:hover .icon {

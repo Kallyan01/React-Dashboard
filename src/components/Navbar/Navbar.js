@@ -5,11 +5,12 @@ function Navbar() {
     const {nav,tab} = useContext(GlobalContext)
     const [navOpen, setNavOpen]= nav
     const [Tab,setTab]= tab
+    console.log(navOpen)
     return (
         <div className='navbar'>
             <div className="leftmenu">
-                <div className="menuicon" onClick={()=>setNavOpen(0)}>
-                    <i class="fas fa-bars"></i>
+                <div className="menuicon" onClick={()=>setNavOpen(!navOpen)}>
+                    <i className={navOpen===true?'fas fa-times':'fas fa-bars'}></i>
                 </div>
                 <div className="text-menu">
                     <li className='active'>{Tab===1?"Dashboard":"Release Project"}</li>
