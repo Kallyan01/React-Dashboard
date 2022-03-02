@@ -1,13 +1,13 @@
 .releaseproject .pagetitle {
-    margin: 20px;
-    width: 85%;
     display: flex;
     align-items: center;
     /* background-color: red; */
+    width: 90%;
 }
 
 .releaseproject {
-    margin: 5% 0 0 0;
+    width: 90%;
+    margin: 5% auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,6 +33,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
+    
 
 }
 

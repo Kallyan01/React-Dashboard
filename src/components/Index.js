@@ -25,12 +25,9 @@ function Index() {
   
   }
   const bodywidth = {
-    transform: ScreenWidth > 760 ? `translate(${NavOpen === 0 ? 20 : 0}%)` : `translate(${NavOpen === 0 ? 50 : 0}%)`,
-  
-
+    // width: ScreenWidth > 760 ? `(${NavOpen === 0 ? 20 : 0}%)` : `(${100}%)`,
+    width: '100%',
   }
-
-
   return (
     <div>
       <Navbar />

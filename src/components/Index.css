@@ -19,14 +19,15 @@
 {
     display: flex;
     overflow-x: hidden;
+    flex-direction: row;
 }
 
 
 .body {
-    float: right;
+    /* float: left; */
     transition: all .8s ease-in-out;
     /* background-color: red; */
-    width: 100%;
+    /* width: 100%; */
     margin: 3% 0;
     
 }
