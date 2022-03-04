@@ -158,6 +158,13 @@
     padding: 2px;
     border-radius: 10px;
     flex-direction: row;
+    cursor: pointer;
+}
+.user-invite:hover
+{
+    border: .05em solid gray;
+    background-color: rgb(221, 221, 221);
+    color: rgba(252, 16, 16, 0.616);
 }
 
 .user-invite h6 {
@@ -167,8 +174,13 @@
 .app-help
 {
     /* background-color: red; */
+    cursor: pointer;
     padding: 2px;
     color: rgb(172, 172, 172);
+}
+.app-help:hover
+{
+    color: rgb(122, 122, 122);
 }
 
 @media screen and (max-width:800px) {
