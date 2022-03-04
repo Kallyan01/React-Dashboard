@@ -46,7 +46,7 @@ export default function Graph() {
        
     ]
     return (
-        <ResponsiveContainer width={ScreenWidth<=450?"98%":"90%"} height={ScreenWidth<=450?300:400}>
+        <ResponsiveContainer width={ScreenWidth<=450?"100%":"90%"} height={ScreenWidth<=450?250:400}>
             <AreaChart data={data}>
                 <defs>
                     <linearGradient id='color' x1="0" y1="0" x2="0" y2="1">

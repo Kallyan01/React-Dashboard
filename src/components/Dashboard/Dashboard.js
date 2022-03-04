@@ -1,6 +1,6 @@
 import React from 'react'
 import Userslist from '../Users/Userslist'
-import Graph from '../Widgets/Graph'
+import Graph2 from '../Widgets/Graph2'
 import './Dashboard.css'
 function Dashboard() {
     return (
@@ -23,7 +23,7 @@ function Dashboard() {
                     </div>
                 </div>
                 <div className="traffic-graph">
-                    <Graph />
+                    <Graph2 />
                 </div>
             </div>
             <div className="usertable">

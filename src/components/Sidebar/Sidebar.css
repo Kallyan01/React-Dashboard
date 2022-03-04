@@ -1,16 +1,17 @@
 .option {
     display: flex;
     align-items: center;
-    padding: 10%;
-    margin: 5px 0;
-    min-width: 100%;
-    height: 7%;
-    width: 200px;
+    padding: 0 20px;
+    margin: 5px 0px;
+    width: 100%;
+    /* background-color: red; */
+    height: 50px;
+    /* width: 200px; */
     cursor: pointer;
     outline: none;
     border: none;
-    /* justify-content:space-between; */
-
+    justify-content: flex-start;
+    transition: .2s ease-in;
 }
 
 .control {
@@ -28,7 +29,7 @@
 
 .option:hover .icon {
     color: rgb(255, 0, 0) !important;
-
+   
 
 }
 
@@ -59,7 +60,13 @@
 
 
 .sidebar .active .icon i, .sidebar .active .option-value p{
-    color: #000 ;
+    color: rgb(255, 0, 0) ;
+    
+}
+.sidebar .active .option
+{
+    border-left: 3px solid red;
+    background-color: rgba(245, 46, 46, 0.226);
 }
 
 .option:hover .option-value {
@@ -72,12 +79,31 @@
     margin: 0 20px 0 0;
     color: rgb(107, 107, 107);
 }
+.side-search
+{
+    /* background-color: red; */
+    width: 100%;
+    padding: 5px 10px;
+}
+.side-search input
+{
+    outline: none;
+    border: none;
+    font-size: .7em;
+    background-color: transparent;
+    width: 80%;
+}
+.side-search i
+{
+    padding: 0 5px;
+    font-size: .7em;
+}
 
 
 .option .option-value p {
     color: rgb(107, 107, 107);
     font-weight: 500;
-    font-size: 1em;
+    font-size: .7em;
     padding: 0;
     margin: 0;
 }

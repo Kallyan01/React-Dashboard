@@ -162,7 +162,8 @@ function Releaseproject() {
                   {Reviewdata.map((a, idx) => {
                     return <Card key={idx} index={idx} id={a.id} pic={a.pic} query={a.content} flag={a.flag} />
                   })}
-                  {provided.placeholder}
+                  {console.log(provided.placeholder)}
+                  {provided.placeholder===true?<>placeholder</>:<></>}
                 </div>
               }
               }

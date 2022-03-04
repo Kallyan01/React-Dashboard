@@ -11,7 +11,8 @@
 .sidebar {
     height: 100vh;
     overflow: hidden;
-    background-color: rgb(236, 236, 236);
+    /* background-color: rgb(236, 236, 236); */
+    border-right: .1em solid rgb(241, 241, 241);
     transition: all .5s ease-in-out;
     z-index: 100;
     
