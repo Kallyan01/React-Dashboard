@@ -35,6 +35,30 @@ function Sidebar() {
                         <div className="option-value"><p>Release Project</p></div>
                     </div>
                 </NavLink>
+                <div className="option-catg">
+                    <div className="catg">
+                        <p>Spaces</p>
+                    </div>
+                    <div className="extend">
+                        <i class="fal fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div className="option-catg">
+                    <div className="catg">
+                        <p>Docs</p>
+                    </div>
+                    <div className="extend">
+                        <i class="fal fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div className="option-catg">
+                    <div className="catg">
+                        <p>Settings</p>
+                    </div>
+                    <div className="extend">
+                        <i class="fal fa-chevron-down"></i>
+                    </div>
+                </div>
             </div>
             <div className="sidebar-footer">
                 <div className="user-prev">
