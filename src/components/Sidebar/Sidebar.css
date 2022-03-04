@@ -19,17 +19,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
-.control h3 span
-{
+
+.control h3 span {
     font-weight: 700;
     color: rgb(212, 55, 16);
 }
 
 .option:hover .icon {
     color: rgb(255, 0, 0) !important;
-   
+
 
 }
 
@@ -59,12 +59,12 @@
 } */
 
 
-.sidebar .active .icon i, .sidebar .active .option-value p{
-    color: rgb(255, 0, 0) ;
-    
+.sidebar .active .icon i, .sidebar .active .option-value p {
+    color: rgb(255, 0, 0);
+
 }
-.sidebar .active .option
-{
+
+.sidebar .active .option {
     border-left: 3px solid red;
     background-color: rgba(245, 46, 46, 0.226);
 }
@@ -75,26 +75,26 @@
 }
 
 
-.option .icon i{
+.option .icon i {
     margin: 0 20px 0 0;
     color: rgb(107, 107, 107);
 }
-.side-search
-{
+
+.side-search {
     /* background-color: red; */
     width: 100%;
     padding: 5px 10px;
 }
-.side-search input
-{
+
+.side-search input {
     outline: none;
     border: none;
     font-size: .7em;
     background-color: transparent;
     width: 80%;
 }
-.side-search i
-{
+
+.side-search i {
     padding: 0 5px;
     font-size: .7em;
 }
@@ -107,15 +107,79 @@
     padding: 0;
     margin: 0;
 }
-@media screen and (max-width:800px){
+
+.sidebar-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: auto !important;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: rebeccapurple; */
+}
+
+.user-pro-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-pro-list .userav:nth-child(1) {
+
+    display: block;
+    color: red;
+}
+
+.user-pro-list .userav:nth-child(2) {
+
+    display: block;
+    color: rgb(25, 216, 175);
+    position: relative;
+    right: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+.user-prev {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+}
+
+.user-invite {
+    display: flex;
+    font-size: .8em;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(252, 16, 16, 0.616);
+    color: #fff;
+    padding: 2px;
+    border-radius: 10px;
+    flex-direction: row;
+}
+
+.user-invite h6 {
+    font-size: .8em;
+    margin: 0 5px;
+}
+.app-help
+{
+    /* background-color: red; */
+    padding: 2px;
+    color: rgb(172, 172, 172);
+}
+
+@media screen and (max-width:800px) {
     .option .icon i {
         font-size: 1em;
     }
-    
-     .option .option-value p {
+
+    .option .option-value p {
         font-size: 1em;
         padding: 0;
         margin: 0;
     }
-    
+
 }
