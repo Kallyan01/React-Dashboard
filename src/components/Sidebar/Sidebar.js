@@ -15,7 +15,7 @@ function Sidebar() {
         <>
             <div className="sidebar-header">
                 <div className="control" style={vis}>
-                    <h3><span>One</span>Ness</h3>
+                    <h3><span>Task</span>Dash</h3>
                 </div>
                 <div className="side-search" style={vis}>
                     <i class="fal fa-search"></i>
